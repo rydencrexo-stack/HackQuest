@@ -1,0 +1,7 @@
+services:
+  hackquest:
+    build: .
+    container_name: hackquest
+    ports:
+      - "2222:22"
+    restart: unless-stopped
