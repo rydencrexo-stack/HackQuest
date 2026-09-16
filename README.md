@@ -40,12 +40,11 @@ Explore the HackQuest terminal-based cybersecurity experience through these prev
 
 ### 🔐 HackQuest Gameplay
 
-![HackQuest Gameplay](level.png)
+![HackQuest Gameplay](level.jpeg)
 
 ### 🕵️ Level 1 — The Hidden Key
 
-![HackQuest Level 1](level1.png)
-
+![HackQuest Level 1](level1.jpeg)
 
 ## ⚠️ Disclaimer
 
