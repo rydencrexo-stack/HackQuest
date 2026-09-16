@@ -73,97 +73,92 @@ docker-compose --version
 
 # Check SSH:
 
-ssh -V
+- ssh -V
 1. Clone the Repository
+```
 git clone https://github.com/rydencrexo-stack/HackQuest.git
+```
 
 Enter the project directory:
-
+```
 cd HackQuest
+```
 2. Build HackQuest
 
 Build the Docker image:
-
+```
 docker-compose build
+```
 3. Start HackQuest
 
 Start the HackQuest container:
-
+```
 docker-compose up -d
-
+```
 Check the running container:
-
+```
 docker ps
+```
 4. Connect to HackQuest
 
 Connect using SSH:
-
+```
 ssh player@localhost -p 2222
-
+```
 When prompted for the password, enter:
 
-hackquest
+# Password To Login:- hackquest
+
 5. Start Level 1
 
 After connecting to HackQuest:
-
+```
 cd ~/level1
-
+```
 Read the mission:
-
+```
 cat README.txt
-
+```
 Investigate the files and solve the challenge.
 
 6. Level 2
 
 After completing Level 1:
-
+```
 cd ~/level2
-
+```
 Read the mission:
-
+```
 cat README.txt
-
+```
 Investigate the files and find the hidden key.
 
 7. Level 3
+```
 cd ~/level3
-
+```
 Read the mission:
-
+```
 cat README.txt
-
+```
 Investigate message.txt and decode the encoded message.
 
 8. Level 4
-cd ~/level4/evidence
-
-Investigate the files:
-
-file *
-
-Then use:
-
-strings mystery
-
+```
+cd ~/level4
+```
 Recover the hidden key.
 
 9. Level 5
+```
 cd ~/level5
-
+```
 Read the clues:
 
-cat clues/clue1.txt
-cat clues/clue2.txt
-cat clues/clue3.txt
-
 Then investigate the final evidence:
-
+```
 cd ~/level5/final
-file *
-strings vault
-
+```
 Recover the final flag.
 
 # 🛑 Stop HackQuest
