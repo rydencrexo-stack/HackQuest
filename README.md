@@ -34,6 +34,19 @@ Linux-based missions.
 - Docker Compose
 - OpenSSH
 
+## 🖥️ Screenshots
+
+Explore the HackQuest terminal-based cybersecurity experience through these previews.
+
+### 🔐 HackQuest Gameplay
+
+![HackQuest Gameplay](level.png)
+
+### 🕵️ Level 1 — The Hidden Key
+
+![HackQuest Level 1](level1.png)
+
+
 ## ⚠️ Disclaimer
 
 HackQuest is designed for educational and authorized cybersecurity
