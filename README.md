@@ -1,11 +1,10 @@
 # 🛡️ HackQuest
 
-A 5-level SSH-based cybersecurity wargame for learning Linux
-commands and basic security investigation.
+> **A 5-Level SSH-Based Cybersecurity Wargame**
 
-## 👨‍💻 Author
+Learn Linux and cybersecurity fundamentals through hands-on terminal challenges.
 
-**Atharva A. Deshmukh**
+**Created by Atharva A. Deshmukh**
 
 Creator and developer of **HackQuest**.
 
