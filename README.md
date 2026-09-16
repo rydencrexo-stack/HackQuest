@@ -46,6 +46,154 @@ Explore the HackQuest terminal-based cybersecurity experience through these prev
 
 ![HackQuest Level 1](level1.jpeg)
 
+## 🚀 Installation & Setup
+
+### 📋 Prerequisites
+
+Make sure the following are installed on your system:
+
+- Git
+- Docker
+- Docker Compose
+- SSH Client
+
+# Check Git:
+
+```bash
+git --version
+
+Check Docker:
+
+docker --version
+
+Check Docker Compose:
+
+docker-compose --version
+```
+
+# Check SSH:
+
+ssh -V
+1. Clone the Repository
+git clone https://github.com/rydencrexo-stack/HackQuest.git
+
+Enter the project directory:
+
+cd HackQuest
+2. Build HackQuest
+
+Build the Docker image:
+
+docker-compose build
+3. Start HackQuest
+
+Start the HackQuest container:
+
+docker-compose up -d
+
+Check the running container:
+
+docker ps
+4. Connect to HackQuest
+
+Connect using SSH:
+
+ssh player@localhost -p 2222
+
+When prompted for the password, enter:
+
+hackquest
+5. Start Level 1
+
+After connecting to HackQuest:
+
+cd ~/level1
+
+Read the mission:
+
+cat README.txt
+
+Investigate the files and solve the challenge.
+
+6. Level 2
+
+After completing Level 1:
+
+cd ~/level2
+
+Read the mission:
+
+cat README.txt
+
+Investigate the files and find the hidden key.
+
+7. Level 3
+cd ~/level3
+
+Read the mission:
+
+cat README.txt
+
+Investigate message.txt and decode the encoded message.
+
+8. Level 4
+cd ~/level4/evidence
+
+Investigate the files:
+
+file *
+
+Then use:
+
+strings mystery
+
+Recover the hidden key.
+
+9. Level 5
+cd ~/level5
+
+Read the clues:
+
+cat clues/clue1.txt
+cat clues/clue2.txt
+cat clues/clue3.txt
+
+Then investigate the final evidence:
+
+cd ~/level5/final
+file *
+strings vault
+
+Recover the final flag.
+
+# 🛑 Stop HackQuest
+
+## To stop the HackQuest container:
+
+- docker-compose down
+- 🔄 Restart HackQuest
+
+- Start the container again:
+
+docker-compose up -d
+
+## Reconnect:
+```
+- ssh player@localhost -p 2222
+
+```
+## 🗑️ Remove HackQuest
+
+- To stop and remove the HackQuest container:
+
+docker-compose down
+
+- To remove the Docker image:
+
+```
+docker rmi hackquest-hackquest
+```
+
 ## ⚠️ Disclaimer
 
 HackQuest is designed for educational and authorized cybersecurity
