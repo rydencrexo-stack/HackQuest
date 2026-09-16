@@ -164,14 +164,15 @@ Recover the final flag.
 # 🛑 Stop HackQuest
 
 ## To stop the HackQuest container:
-
-- docker-compose down
+```
+docker-compose down
+```
 - 🔄 Restart HackQuest
 
 - Start the container again:
-
+```
 docker-compose up -d
-
+```
 ## Reconnect:
 ```
 - ssh player@localhost -p 2222
