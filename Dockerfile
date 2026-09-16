@@ -11,7 +11,6 @@ RUN mkdir /var/run/sshd
 RUN useradd -m -s /bin/bash player && \
     echo "player:hackquest" | chpasswd
 
-RUN echo "player ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 COPY game/ /opt/hackquest/
 
