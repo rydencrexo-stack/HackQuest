@@ -48,3 +48,7 @@ permission.
 Copyright © 2026 **Atharva A. Deshmukh**
 
 HackQuest was created and developed by Atharva A. Deshmukh.
+=======
+# HackQuest
+A 5-level SSH-based cybersecurity wargame for learning Linux commands, file investigation, encoding, and basic security concepts.
+
