@@ -27,9 +27,9 @@ Your goal is to recover the key.
 ========================================
 EOF
 
-cat > /home/player/level3/message.txt <<'EOF'
-SFF7bGV2ZWwzX2VuY29kZWRfc2VjcmV0fQ==
-EOF
+echo 'SFF7bGV2ZWwzX2VuY29kZWRfc2VjcmV0fQ==' | base64 -d > /tmp/hq_level3_message
+cat /tmp/hq_level3_message | base64 -w0 > /home/player/level3/message.txt
+rm /tmp/hq_level3_message
 
 chown -R player:player /home/player/level3
 chmod 755 /home/player/level3

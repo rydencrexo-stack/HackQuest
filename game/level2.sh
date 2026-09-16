@@ -31,12 +31,8 @@ for i in $(seq -w 1 50); do
     echo "This file contains no useful key." > "/home/player/level2/data/file${i}.txt"
 done
 
-# Hide the actual key inside one file
-cat > /home/player/level2/data/file37.txt <<'EOF'
-Congratulations, you found the hidden key:
-
-[REDACTED]
-EOF
+echo "Congratulations, you found the hidden key:" > /home/player/level2/data/file37.txt
+echo 'SFF7bGV2ZWwyX3NlYXJjaF9tYXN0ZXJ9' | base64 -d >> /home/player/level2/data/file37.txt
 
 chown -R player:player /home/player/level2
 chmod 755 /home/player/level2

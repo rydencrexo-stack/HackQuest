@@ -92,7 +92,8 @@ Nothing useful here.
 The vault requires further investigation.
 EOF
 
-# Create the actual final evidence
+# Create the final evidence without exposing
+# the plaintext flag in the GitHub source
 cat > /home/player/level5/final/vault <<'EOF'
 ========================================
 HACKQUEST FINAL VAULT
@@ -102,7 +103,11 @@ SYSTEM STATUS: COMPROMISED
 
 RECOVERED EVIDENCE:
 
-[REDACTED]
+EOF
+
+echo 'SFF7aGFja3F1ZXN0X2NvbXBsZXRlZH0=' | base64 -d >> /home/player/level5/final/vault
+
+cat >> /home/player/level5/final/vault <<'EOF'
 
 ========================================
 END OF FINAL EVIDENCE

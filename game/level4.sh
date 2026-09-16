@@ -59,16 +59,21 @@ SYSTEM EVIDENCE
 The filename was intentionally removed.
 
 Some information has been recovered:
+EOF
 
-[REDACTED]
+echo 'SFF7bGV2ZWw0X21pc3RlcnlfdW5sb2NrZWR9' | base64 -d >> /home/player/level4/evidence/mystery
+
+cat >> /home/player/level4/evidence/mystery <<'EOF'
 
 END OF EVIDENCE
 EOF
 
 chown -R player:player /home/player/level4
+
 chmod 755 /home/player/level4
 chmod 755 /home/player/level4/evidence
 chmod 644 /home/player/level4/README.txt
 chmod 644 /home/player/level4/evidence/*
 
 echo "Level 4 created successfully."
+
