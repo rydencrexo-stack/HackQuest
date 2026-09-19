@@ -61,13 +61,13 @@ Make sure the following are installed on your system:
 
 ```bash
 git --version
-
+```
 Check Docker:
-
+```bash
 docker --version
-
+```
 Check Docker Compose:
-
+```bash
 docker-compose --version
 ```
 
